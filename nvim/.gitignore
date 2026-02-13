@@ -1,0 +1,17 @@
+# Compiled Lua
+plugin/packer_compiled.lua
+
+# Lazy.nvim
+lazy-lock.json
+
+# Temporary files
+/tmp/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+
+# Local config (optional - uncomment if you want to ignore local overrides)
+# lua/joakimunge/lazy/local.lua

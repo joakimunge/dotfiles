@@ -1,0 +1,30 @@
+[user]
+	name = Joakim Unge
+	email = ashba@unge.se
+[credential]
+	helper = osxkeychain
+[color]
+	ui = auto
+[alias]
+	c = commit
+	cm = commit -m
+	chkecout = checkout
+	cehckout = checkout
+	st = status
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	la = "!git config -l | grep alias | cut -c 7-"
+	oops = reset HEAD~
+	
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[hub]
+	protocol = ssh
+[url "https://"]
+	insteadOf = git://
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main

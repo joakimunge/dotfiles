@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+
+# Neovim
+nvim/plugin/
+nvim/.luarc.json
+
+# Secrets (just in case)
+*.local
+*credentials*
+*secret*

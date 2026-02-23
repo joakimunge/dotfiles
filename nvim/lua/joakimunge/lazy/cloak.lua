@@ -1,6 +1,7 @@
 return {
     "laytan/cloak.nvim",
     config = function() 
+        vim.keymap.set('n', '<leader>ct', ':CloakToggle<CR>', { desc = "Toggle Cloak" })
         require("cloak").setup({
             enabled = true,
             cloak_character = "*",

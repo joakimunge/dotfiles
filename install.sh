@@ -37,6 +37,17 @@ link_file "$DOTFILES_DIR/gitconfig" "$HOME/.gitconfig"
 mkdir -p "$HOME/.config/git"
 link_file "$DOTFILES_DIR/git/ignore" "$HOME/.config/git/ignore"
 
+# Tmux
+link_file "$DOTFILES_DIR/tmux.conf" "$HOME/.tmux.conf"
+
+# OpenCode
+mkdir -p "$HOME/.config/opencode"
+link_file "$DOTFILES_DIR/config/opencode/opencode.jsonc" "$HOME/.config/opencode/opencode.jsonc"
+
+# GitHub CLI
+mkdir -p "$HOME/.config/gh"
+link_file "$DOTFILES_DIR/config/gh/config.yml" "$HOME/.config/gh/config.yml"
+
 echo ""
 echo "Done! Backups saved to $BACKUP_DIR"
 echo "Restart your terminal or run 'source ~/.zshrc' to apply changes."
